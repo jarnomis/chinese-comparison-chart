@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/chinese-comparison-chart/static/css/main.6d3c0dcf.css",
-    "main.js": "/chinese-comparison-chart/static/js/main.4eea8fdd.js",
+    "main.js": "/chinese-comparison-chart/static/js/main.ac39f294.js",
     "static/js/787.2dbd24bf.chunk.js": "/chinese-comparison-chart/static/js/787.2dbd24bf.chunk.js",
     "index.html": "/chinese-comparison-chart/index.html",
     "main.6d3c0dcf.css.map": "/chinese-comparison-chart/static/css/main.6d3c0dcf.css.map",
-    "main.4eea8fdd.js.map": "/chinese-comparison-chart/static/js/main.4eea8fdd.js.map",
+    "main.ac39f294.js.map": "/chinese-comparison-chart/static/js/main.ac39f294.js.map",
     "787.2dbd24bf.chunk.js.map": "/chinese-comparison-chart/static/js/787.2dbd24bf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6d3c0dcf.css",
-    "static/js/main.4eea8fdd.js"
+    "static/js/main.ac39f294.js"
   ]
 }
