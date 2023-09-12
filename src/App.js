@@ -99,11 +99,14 @@ class App extends Component {
   render() {
     const isTextboxCheckboxChecked = !!this.state.selectedValues["Use Textbox"];
     const isTextbox2Empty = this.state.searchfield2 === '';
-
+    
+    // Check if any of the 1000, 2000, or 3000 checkboxes are checked
+    const isAnyFrequencyCheckboxChecked = this.state.selectedValues[1000] || this.state.selectedValues[2000] || this.state.selectedValues[3000];
+    
     return (
       <div className='tc'>
         <h1 className='f1'>Chinese Character Comparison Chart</h1>
-
+    
         <div className="search-wrapper">
           <SearchBox
             id='first'
@@ -123,7 +126,10 @@ class App extends Component {
                   className="custom-checkbox"
                   value={value === "Use Textbox" ? null : this.checkValue(value)}
                   checked={this.state.selectedValues[value]}
-                  disabled={(value !== "Use Textbox" && this.state.selectedValues["Use Textbox"]) || (value === "Use Textbox" && !isTextbox2Empty)}
+                  disabled={ 
+                    (value !== "Use Textbox" && this.state.selectedValues["Use Textbox"]) || 
+                    (value === "Use Textbox" && (isAnyFrequencyCheckboxChecked || !isTextbox2Empty))
+                  }
                   onChange={() => this.handleRadioButtonChange(value)}
                 />
                 <label htmlFor={`checkbox-${value}`}>{value}</label>
